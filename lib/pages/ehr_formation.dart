@@ -6,6 +6,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:http/http.dart' as http;
+import 'package:geolocator/geolocator.dart';
 import 'dart:async';
 import 'dart:convert';
 
@@ -22,6 +23,18 @@ class _EhrFormationState extends State<EhrFormation> {
   var state_confirmed = new List(38);
   var state_recovered = new List(38);
   var state_deceased = new List(38);
+
+  void getLocation() async {
+    try {
+      Position position = await Geolocator()
+          .getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
+      print(position.latitude);
+      print(position.longitude);
+      print("**********************************************************");
+    } catch (e) {
+      print(e);
+    }
+  }
 
   Future getData() async {
     http.Response response =
