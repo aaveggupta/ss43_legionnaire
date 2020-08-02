@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "26702847030",
+    "firebase_url": "https://arcyon-healthbot.firebaseio.com",
+    "project_id": "arcyon-healthbot",
+    "storage_bucket": "arcyon-healthbot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26702847030:android:b46f2c96b5f3a61e848c97",
+        "android_client_info": {
+          "package_name": "com.legionnaire.arcyon_healthbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26702847030-q5qkdgg07bc07pcdquglm7h08sg84vgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqyGs7F1UswmgbIkpxveGoBSqBufZZJVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26702847030-q5qkdgg07bc07pcdquglm7h08sg84vgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
