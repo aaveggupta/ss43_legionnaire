@@ -85,7 +85,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('YouTube Channel'),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        title: Text(
+          "Fitness Section",
+          style: TextStyle(
+            color: Color(0xff0f4c75),
+          ),
+        ),
+        backgroundColor: Color(0xffbbe1fa),
       ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(
